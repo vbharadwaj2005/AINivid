@@ -1,9 +1,10 @@
 # AI-Shayak: Ethical AI Governance Platform
-AI-Shayak is a comprehensive AI governance platform designed to evaluate machine learning models for bias, fairness, robustness, privacy, and security across multiple ML frameworks.
+
+AI-Shayak is a Streamlit-based AI governance platform that evaluates machine learning models for bias, fairness, robustness, privacy, and security across multiple ML frameworks.
 
 <div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="frontend/public/Screenshot1.png" alt="Home" width="45%" />
-  <img src="frontend/public/Screenshot2.png" alt="Evaluation" width="45%" />
+  <img src="assets/Screenshot1.png" alt="Home" width="45%" />
+  <img src="assets/Screenshot2.png" alt="Evaluation" width="45%" />
 </div>
 
 ## Key Features
@@ -27,37 +28,11 @@ AI-Shayak is a comprehensive AI governance platform designed to evaluate machine
 - **Differential Privacy Audit**: Leave-one-out influence analysis estimating ε-DP guarantees.
 - **Membership Inference Attack**: Shadow model training to measure training set membership detectability.
 
-### Frontend Improvements
-- **Drag-and-Drop Upload**: Drop model/dataset files directly onto upload zones.
-- **Dataset Schema Preview**: Server-side column analysis showing data types, unique counts, missing values.
-- **Enhanced Report Download**: Comprehensive plain-text report covering all audit dimensions.
-- **Framework Badge**: Displays detected ML framework next to audit results.
-
 ### Multi-Framework Support
 - **Framework Auto-Detection**: Automatically identifies **scikit-learn**, **XGBoost**, **PyTorch**, and **TensorFlow/Keras** models.
 - **Multi-Format Model Upload**: Supports `.pkl`, `.joblib`, `.json`/`.ubj` (XGBoost), `.pt`/`.pth` (PyTorch), `.h5`/`.keras` (TensorFlow).
 - **Unified Prediction Interface**: Single prediction pipeline that adapts to each framework's conventions.
 - **Regression Fairness Metrics**: Mean prediction difference and MAE disparity across groups for regression models.
-
-## Project Structure
-
-```
-AI-Shayak/
-├── backend/
-│   ├── main.py           - Flask API server (5 routes)
-│   ├── model.py          - Model generation script (UCI Adult Income)
-│   ├── model.pkl         - Pre-trained model
-│   ├── test_data.csv     - Test dataset
-│   └── requirements.txt  - Python dependencies
-├── frontend/
-│   ├── app/              - Next.js App Router pages
-│   ├── components/       - UI components (shadcn/ui)
-│   ├── public/           - Static assets
-│   ├── package.json
-│   └── tsconfig.json
-├── start.bat             - Launch script
-└── README.md
-```
 
 ## Usage
 1. **Select Audit Scope**: Choose "End-to-End Audit" (Model + Dataset) or "Data-Only Ethics Audit".
@@ -82,26 +57,36 @@ The platform is built on core AI ethics and machine learning principles:
 
 ## Installation & Setup
 
-### Backend (Python)
 ```bash
-cd backend
-pip install -r requirements.txt
-python main.py
-```
+cd AIShayak
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# macOS/Linux:
+# source .venv/bin/activate
 
-### Frontend (Next.js)
-```bash
-cd frontend
-npm install
-npm run dev
+pip install -r requirements.txt
 ```
 
 ### Generate Demo Files
 ```bash
-cd backend
 python model.py
 ```
 This trains a LogisticRegression model on the UCI Adult Income dataset and saves `model.pkl` + `test_data.csv`.
+
+### Run the App
+```bash
+streamlit run app.py
+```
+Or on Windows, double-click `start.bat`.
+
+The app opens at **http://localhost:8501**.
+
+## Security Notes
+- Uploaded files are written to temporary paths and deleted after each audit.
+- Model and dataset uploads are capped at **500MB**.
+- Only allowlisted model extensions are accepted.
+- Deserializing untrusted `.pkl` / `.joblib` / Torch / TF models can execute arbitrary code — only upload models you trust.
 
 ---
 

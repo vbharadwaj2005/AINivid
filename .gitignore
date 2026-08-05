@@ -3,21 +3,17 @@ __pycache__/
 *.pyc
 *.pyo
 *.egg-info/
+.streamlit/
 .venv/
 venv/
 .env
 
-# Backend generated files
-backend/model.pkl
-backend/test_data.csv
+# Generated demo artifacts
+model.pkl
+test_data.csv
 
-# Next.js
-frontend/.next/
-frontend/out/
-
-# Dependencies
-frontend/node_modules/
-frontend/package-lock.json
+# Streamlit
+.streamlit/secrets.toml
 
 # IDE
 .vscode/
@@ -28,3 +24,10 @@ frontend/package-lock.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Legacy (if present)
+frontend/
+backend/
+node_modules/
+.next/
+package-lock.json
