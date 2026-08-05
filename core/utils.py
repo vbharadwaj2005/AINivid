@@ -11,7 +11,6 @@ import traceback
 from contextlib import contextmanager
 from typing import Any, BinaryIO, Callable, Iterator, Optional
 
-import numpy as np
 import pandas as pd
 
 from core.config import ALLOWED_MODEL_EXTS
