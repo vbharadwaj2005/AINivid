@@ -24,10 +24,3 @@ test_data.csv
 # OS
 .DS_Store
 Thumbs.db
-
-# Legacy (if present)
-frontend/
-backend/
-node_modules/
-.next/
-package-lock.json
