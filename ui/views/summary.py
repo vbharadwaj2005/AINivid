@@ -1,5 +1,5 @@
 """
-AI Shayak — Audit Summary Header & Score Cards View.
+AI Nivid — Audit Summary Header & Score Cards View.
 """
 
 from __future__ import annotations
@@ -43,7 +43,7 @@ def render_summary(results: dict[str, Any]) -> None:
             st.download_button(
                 "Download Full Report",
                 data=report,
-                file_name=f"AI_Shayak_Audit_{datetime.now().date()}.txt",
+                file_name=f"AI_Nivid_Audit_{datetime.now().date()}.txt",
                 mime="text/plain",
                 use_container_width=True,
             )

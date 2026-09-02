@@ -1,5 +1,5 @@
 """
-AI Shayak — Configuration and Constants.
+AI Nivid — Configuration and Constants.
 """
 
 from __future__ import annotations

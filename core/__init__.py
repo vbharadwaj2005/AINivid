@@ -1,5 +1,5 @@
 """
-AI Shayak — Core Ethical AI Governance & Audit Engine.
+AI Nivid — Core Ethical AI Governance & Audit Engine.
 """
 
 from core.compliance import (

@@ -1,5 +1,5 @@
 """
-AI Shayak — Model Framework Detection, Loading, and Prediction Wrappers.
+AI Nivid — Model Framework Detection, Loading, and Prediction Wrappers.
 """
 
 from __future__ import annotations

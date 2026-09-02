@@ -1,5 +1,5 @@
 """
-AI Shayak — Ethics, Bias, and Fairness Metrics Calculation.
+AI Nivid — Ethics, Bias, and Fairness Metrics Calculation.
 """
 
 from __future__ import annotations

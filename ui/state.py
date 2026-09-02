@@ -1,5 +1,5 @@
 """
-AI Shayak — Session State Management Helpers.
+AI Nivid — Session State Management Helpers.
 """
 
 from __future__ import annotations

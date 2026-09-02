@@ -1,5 +1,5 @@
 """
-AI Shayak — UI HTML Badges and Render Components.
+AI Nivid — UI HTML Badges and Render Components.
 """
 
 from __future__ import annotations

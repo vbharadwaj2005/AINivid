@@ -1,5 +1,5 @@
 """
-AI Shayak — Input Assets and Schema Preview View.
+AI Nivid — Input Assets and Schema Preview View.
 """
 
 from __future__ import annotations

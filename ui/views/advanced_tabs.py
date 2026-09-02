@@ -1,5 +1,5 @@
 """
-AI Shayak — Advanced Analysis Tabs View (Optimization, Deep Fairness, Security).
+AI Nivid — Advanced Analysis Tabs View (Optimization, Deep Fairness, Security).
 """
 
 from __future__ import annotations

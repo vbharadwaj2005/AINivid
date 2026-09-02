@@ -1,5 +1,5 @@
 """
-AI Shayak — Utility and Helper Functions.
+AI Nivid — Utility and Helper Functions.
 """
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ import pandas as pd
 
 from core.config import ALLOWED_MODEL_EXTS
 
-logger = logging.getLogger("aishayak.core")
+logger = logging.getLogger("ainivid.core")
 
 
 def is_numeric_dtype(series_or_dtype: Any) -> bool:

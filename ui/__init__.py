@@ -1,5 +1,5 @@
 """
-AI Shayak — User Interface Package.
+AI Nivid — User Interface Package.
 """
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ logging.basicConfig(
 
 
 def render_app() -> None:
-    """Render the full Streamlit AI Shayak application UI."""
+    """Render the full Streamlit AI Nivid application UI."""
     apply_styles()
     init_state()
     render_header_hero()

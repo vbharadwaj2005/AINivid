@@ -1,5 +1,5 @@
 """
-AI Shayak — Regulatory Compliance, Mitigation Planning, and Report Generation.
+AI Nivid — Regulatory Compliance, Mitigation Planning, and Report Generation.
 """
 
 from __future__ import annotations
@@ -78,7 +78,7 @@ def build_report_text(
     lines: list[str] = []
     add = lines.append
     r = results
-    add("AI SHAYAK - ETHICAL AI & MODEL GOVERNANCE AUDIT REPORT")
+    add("AI NIVID - ETHICAL AI & MODEL GOVERNANCE AUDIT REPORT")
     add("=====================================================")
     add("")
     add("Generated: " + datetime.now(timezone.utc).isoformat())

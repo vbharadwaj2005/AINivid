@@ -1,6 +1,6 @@
-# AI-Shayak: Ethical AI Governance Platform
+# AI Nivid: Ethical AI Governance Platform
 
-AI-Shayak is a Streamlit-based AI governance platform that evaluates machine learning models for bias, fairness, robustness, privacy, and security across multiple ML frameworks.
+AI Nivid is a Streamlit-based AI governance platform that evaluates machine learning models for bias, fairness, robustness, privacy, and security across multiple ML frameworks.
 
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="assets/Screenshot1.png" alt="Home" width="45%" />
@@ -58,7 +58,7 @@ The platform is built on core AI ethics and machine learning principles:
 ## Installation & Setup
 
 ```bash
-cd AIShayak
+cd AINivid
 python -m venv .venv
 # Windows:
 .venv\Scripts\activate

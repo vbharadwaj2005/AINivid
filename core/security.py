@@ -1,5 +1,5 @@
 """
-AI Shayak — Model Security, Differential Privacy, and Robustness Auditing.
+AI Nivid — Model Security, Differential Privacy, and Robustness Auditing.
 """
 
 from __future__ import annotations

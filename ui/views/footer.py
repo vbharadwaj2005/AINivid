@@ -1,5 +1,5 @@
 """
-AI Shayak — Footer View.
+AI Nivid — Footer View.
 """
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def render_footer() -> None:
     st.markdown(
         """
 <div class="as-footer">
-  © 2026 AI Shayak — Empowering Ethical Machine Learning
+  © 2026 AI Nivid — Empowering Ethical Machine Learning
 </div>
 """,
         unsafe_allow_html=True,

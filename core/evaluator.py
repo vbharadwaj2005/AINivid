@@ -1,5 +1,5 @@
 """
-AI Shayak — High-level Audit Evaluation & Orchestration APIs.
+AI Nivid — High-level Audit Evaluation & Orchestration APIs.
 """
 
 from __future__ import annotations

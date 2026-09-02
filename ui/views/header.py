@@ -1,5 +1,5 @@
 """
-AI Shayak — Header and Hero Banner View.
+AI Nivid — Header and Hero Banner View.
 """
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def render_header_hero() -> None:
 <div class="as-header">
   <div class="as-logo">✓</div>
   <div>
-    <p class="as-brand">AI Shayak</p>
+    <p class="as-brand">AI Nivid</p>
     <p class="as-sub">Ethical AI Governance Platform</p>
   </div>
 </div>

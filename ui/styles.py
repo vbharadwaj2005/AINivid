@@ -1,5 +1,5 @@
 """
-AI Shayak — UI Styling & Custom Dark CSS Theme.
+AI Nivid — UI Styling & Custom Dark CSS Theme.
 """
 
 from __future__ import annotations
